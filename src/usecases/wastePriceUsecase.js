@@ -18,6 +18,10 @@ function getWastePrice() {
     return WastePrice.find()
 }
 
+function getWastePriceId(id){
+    return WastePrice.findById(id)
+}
+
 function updateWastePrice(id, data){
     return WastePrice.findByIdAndUpdate(id, data, {new:true}) 
 }
@@ -28,6 +32,7 @@ function deleteWastePrice(id) {
 
 module.exports = {
     getWastePrice,
+    getWastePriceId,
     createWastePrice,
     updateWastePrice,
     deleteWastePrice
