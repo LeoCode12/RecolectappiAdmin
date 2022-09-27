@@ -61,7 +61,7 @@ async function updateWallet(id, data){
     cans_wallet,
     grease_wallet
   }
-  console.log(wallet);
+
   return Wallet.findByIdAndUpdate(id, wallet, {new: true})
 }
 
